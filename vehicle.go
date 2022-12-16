@@ -1,12 +1,5 @@
 package main
 
-import (
-	"encoding/json"
-	"io/ioutil"
-	"log"
-	"os"
-)
-
 type vehicle interface {
 }
 
@@ -65,7 +58,7 @@ func init() {
 		truck{"F-150", "Ford", "Truck"},
 		truck{"RAM1500", "Dodge", "Truck"}}
 
-		vehicleResult = make(map[string]feedbackResult)
+	vehicleResult = make(map[string]feedbackResult)
 
 }
 
@@ -75,6 +68,7 @@ func main() {
 
 	// Print ratings for the different vehicles
 }
+
 /*
 func readJSONFile() Values {
 	jsonFile, err := os.Open("feedback.json")
@@ -91,3 +85,4 @@ func readJSONFile() Values {
 
 	return content
 }
+*/
