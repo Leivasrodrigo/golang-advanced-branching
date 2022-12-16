@@ -1,5 +1,12 @@
 package main
 
+import (
+	"encoding/json"
+	"io/ioutil"
+	"log"
+	"os"
+)
+
 type vehicle interface {
 }
 
@@ -45,20 +52,19 @@ const (
 
 func init() {
 
-	
-		inventory = []vehicle{
-			bike{"FTR 1200", "Indian"},
-			bike{"Iron 1200", "Harley"},
-			car{"Sonata", "Hyundai", "Sedan"},
-			car{"SantaFe", "Hyundai", "SUV"},
-			car{"Civic", "Honda", "Hatchback"},
-			car{"A5", "Audi", "Coupe"},
-			car{"Mazda6", "Mazda", "Sedan"},
-			car{"CRV", "Honda", "SUV"},
-			car{"Camry", "Toyota", "Sedan"},
-			truck{"F-150", "Ford", "Truck"},
-			truck{"RAM1500", "Dodge", "Truck"}}
-	*/
+	inventory = []vehicle{
+		bike{"FTR 1200", "Indian"},
+		bike{"Iron 1200", "Harley"},
+		car{"Sonata", "Hyundai", "Sedan"},
+		car{"SantaFe", "Hyundai", "SUV"},
+		car{"Civic", "Honda", "Hatchback"},
+		car{"A5", "Audi", "Coupe"},
+		car{"Mazda6", "Mazda", "Sedan"},
+		car{"CRV", "Honda", "SUV"},
+		car{"Camry", "Toyota", "Sedan"},
+		truck{"F-150", "Ford", "Truck"},
+		truck{"RAM1500", "Dodge", "Truck"}}
+
 	//	vehicleResult = make(map[string]feedbackResult)
 
 }
@@ -70,7 +76,6 @@ func main() {
 	// Print ratings for the different vehicles
 }
 
-/*
 func readJSONFile() Values {
 	jsonFile, err := os.Open("feedback.json")
 
@@ -86,4 +91,3 @@ func readJSONFile() Values {
 
 	return content
 }
-*/
