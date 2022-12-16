@@ -68,14 +68,14 @@ func init() {
 		vehicleResult = make(map[string]feedbackResult)
 
 }
-/*
+
 func main() {
 
 	// Generate ratings for the different vehicles
 
 	// Print ratings for the different vehicles
 }
-
+/*
 func readJSONFile() Values {
 	jsonFile, err := os.Open("feedback.json")
 
